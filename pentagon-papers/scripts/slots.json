@@ -1,0 +1,15 @@
+{
+ "doc_cover":   {"src": "pdf", "id": 2},
+ "doc_cover_detail": {"src": "pdf", "id": 2, "crop": "1300:680:120:180"},
+ "doc_text":    {"src": "pdf", "id": 6, "crop": "1260:700:150:420"},
+ "doc_header":  {"src": "pdf", "id": 5, "crop": "1300:640:120:60"},
+ "doc_page5":   {"src": "pdf", "id": 5},
+ "doc_page6":   {"src": "pdf", "id": 6},
+ "doc_page8":   {"src": "pdf", "id": 8},
+ "doc_page12":  {"src": "pdf", "id": 12},
+ "doc_page13":  {"src": "pdf", "id": 13},
+ "truman":      {"src": "si", "id": "npg/NPG-8400594C_1", "credit": "Harry S. Truman, c. 1945, Harris & Ewing Studio, National Portrait Gallery"},
+ "eisenhower":  {"src": "si", "id": "npg/NPG-NPG_2013_19", "credit": "Dwight D. Eisenhower, c. 1953, Robert F. Cranston, National Portrait Gallery"},
+ "johnson":     {"src": "si", "id": "npg/NPG-NPG_93_388_22", "credit": "Lyndon B. Johnson, c. 1965, Oscar White / Pach Brothers, National Portrait Gallery"},
+ "typewriter":  {"src": "si", "id": "nmaahc/NMAAHC-5686075A5BD62_4001-000002", "credit": "Underwood typewriter, National Museum of African American History and Culture"}
+}
