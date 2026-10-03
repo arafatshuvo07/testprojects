@@ -1,0 +1,309 @@
+{
+ "_note": "Each key is an image slot used by src/shots.ts. 'files' are exact Wikimedia Commons titles tried first; 'search' queries are fallbacks. Only public-domain / CC-licensed bitmaps are accepted.",
+ "doc_page": {
+  "files": [
+   "File:Pentagon-Papers-Part-IV-A-3.pdf"
+  ],
+  "search": [
+   "Pentagon Papers page filetype:pdf",
+   "Pentagon Papers document"
+  ],
+  "page": 12
+ },
+ "doc_title": {
+  "files": [
+   "File:Pentagon-Papers-Part-I.pdf"
+  ],
+  "search": [
+   "United States-Vietnam Relations 1945-1967 Pentagon Papers"
+  ],
+  "page": 1
+ },
+ "doc_page2": {
+  "files": [
+   "File:Pentagon-Papers-Part-IV-B-1.pdf"
+  ],
+  "search": [
+   "Pentagon Papers Part IV"
+  ],
+  "page": 40
+ },
+ "doc_page3": {
+  "files": [
+   "File:Pentagon-Papers-Part-V-B-4.pdf"
+  ],
+  "search": [
+   "Pentagon Papers Part V"
+  ],
+  "page": 25
+ },
+ "doc_map": {
+  "files": [
+   "File:PentagonPapers.jpg"
+  ],
+  "search": [
+   "Pentagon Papers map Indochina"
+  ]
+ },
+ "xerox": {
+  "files": [],
+  "search": [
+   "Xerox 914 copier",
+   "Xerox photocopier 1960s"
+  ]
+ },
+ "ellsberg_1972": {
+  "files": [
+   "File:Daniel Ellsberg at 1972 press conference (cropped).jpg"
+  ],
+  "search": [
+   "Daniel Ellsberg 1972",
+   "Daniel Ellsberg press conference"
+  ]
+ },
+ "ellsberg_2": {
+  "files": [
+   "File:Daniel Ellsberg at 1972 press conference.jpg",
+   "File:Daniel Ellsberg.jpg"
+  ],
+  "search": [
+   "Daniel Ellsberg 1971",
+   "Daniel Ellsberg"
+  ]
+ },
+ "ellsberg_late": {
+  "files": [
+   "File:Daniel Ellsberg 2006.jpg",
+   "File:Daniel Ellsberg (cropped).jpg"
+  ],
+  "search": [
+   "Daniel Ellsberg 2006",
+   "Daniel Ellsberg portrait"
+  ]
+ },
+ "pentagon": {
+  "files": [
+   "File:The Pentagon, cropped square.png",
+   "File:The Pentagon January 2008.jpg"
+  ],
+  "search": [
+   "Pentagon aerial view Arlington"
+  ]
+ },
+ "mcnamara": {
+  "files": [
+   "File:Robert McNamara official portrait.jpg"
+  ],
+  "search": [
+   "Robert McNamara Secretary of Defense portrait"
+  ]
+ },
+ "vietnam_heli": {
+  "files": [
+   "File:UH-1D helicopters in Vietnam 1966.jpg"
+  ],
+  "search": [
+   "UH-1D helicopters Vietnam 1966"
+  ]
+ },
+ "vietnam_troops": {
+  "files": [],
+  "search": [
+   "Vietnam War soldiers patrol 1967",
+   "US infantry Vietnam 1966"
+  ]
+ },
+ "vietnam_wide": {
+  "files": [],
+  "search": [
+   "Vietnam War 1968 marines",
+   "Vietnam War battle 1968"
+  ]
+ },
+ "truman": {
+  "files": [
+   "File:TRUMAN 58-766-06 (cropped).jpg"
+  ],
+  "search": [
+   "Harry S. Truman portrait"
+  ]
+ },
+ "eisenhower": {
+  "files": [
+   "File:Dwight D. Eisenhower, official photo portrait, May 29, 1959.jpg"
+  ],
+  "search": [
+   "Dwight Eisenhower official portrait"
+  ]
+ },
+ "kennedy": {
+  "files": [
+   "File:John F. Kennedy, White House color photo portrait.jpg"
+  ],
+  "search": [
+   "John F. Kennedy portrait White House"
+  ]
+ },
+ "johnson": {
+  "files": [
+   "File:37 Lyndon Johnson 3x4.jpg"
+  ],
+  "search": [
+   "Lyndon B. Johnson portrait"
+  ]
+ },
+ "lbj_press": {
+  "files": [],
+  "search": [
+   "Lyndon Johnson press conference Vietnam",
+   "Lyndon Johnson television address"
+  ]
+ },
+ "rand": {
+  "files": [],
+  "search": [
+   "RAND Corporation Santa Monica building"
+  ]
+ },
+ "russo": {
+  "files": [],
+  "search": [
+   "Anthony Russo Pentagon Papers",
+   "Anthony Russo Ellsberg"
+  ]
+ },
+ "capitol": {
+  "files": [],
+  "search": [
+   "United States Capitol 1970s",
+   "United States Capitol building"
+  ]
+ },
+ "fulbright": {
+  "files": [],
+  "search": [
+   "J. William Fulbright senator portrait"
+  ]
+ },
+ "nyt_building": {
+  "files": [],
+  "search": [
+   "New York Times Building 229 West 43rd Street"
+  ]
+ },
+ "sheehan": {
+  "files": [],
+  "search": [
+   "Neil Sheehan journalist"
+  ]
+ },
+ "press": {
+  "files": [],
+  "search": [
+   "newspaper printing press 1970s",
+   "newspaper printing press"
+  ]
+ },
+ "white_house": {
+  "files": [],
+  "search": [
+   "White House north facade 1970s",
+   "White House north portico"
+  ]
+ },
+ "nixon": {
+  "files": [
+   "File:Richard M. Nixon, ca. 1935 - 1982 - NARA - 530679.jpg",
+   "File:Portrait of President Nixon - NARA - 194402.jpg"
+  ],
+  "search": [
+   "Richard Nixon portrait NARA"
+  ]
+ },
+ "mitchell": {
+  "files": [],
+  "search": [
+   "John N. Mitchell Attorney General"
+  ]
+ },
+ "newspapers": {
+  "files": [],
+  "search": [
+   "newspapers stack 1970s",
+   "newspaper stand 1970s"
+  ]
+ },
+ "wapo": {
+  "files": [],
+  "search": [
+   "Washington Post building 1150 15th Street",
+   "Washington Post building"
+  ]
+ },
+ "graham": {
+  "files": [],
+  "search": [
+   "Katharine Graham Ben Bradlee",
+   "Katharine Graham"
+  ]
+ },
+ "protest": {
+  "files": [],
+  "search": [
+   "Vietnam War protest Washington 1971",
+   "anti-Vietnam War demonstration 1971"
+  ]
+ },
+ "doj": {
+  "files": [],
+  "search": [
+   "Robert F. Kennedy Department of Justice Building"
+  ]
+ },
+ "scotus": {
+  "files": [
+   "File:Panorama of United States Supreme Court Building at Dusk.jpg"
+  ],
+  "search": [
+   "United States Supreme Court Building"
+  ]
+ },
+ "burger_court": {
+  "files": [],
+  "search": [
+   "Burger Court 1971 justices",
+   "Supreme Court justices 1971"
+  ]
+ },
+ "courthouse_la": {
+  "files": [],
+  "search": [
+   "United States Court House Los Angeles Spring Street"
+  ]
+ },
+ "hunt": {
+  "files": [],
+  "search": [
+   "E. Howard Hunt"
+  ]
+ },
+ "liddy": {
+  "files": [],
+  "search": [
+   "G. Gordon Liddy"
+  ]
+ },
+ "fielding_office": {
+  "files": [],
+  "search": [
+   "Liddy Fielding office photograph",
+   "Fielding office break-in"
+  ]
+ },
+ "byrne": {
+  "files": [],
+  "search": [
+   "William Matthew Byrne Jr. judge"
+  ]
+ }
+}
