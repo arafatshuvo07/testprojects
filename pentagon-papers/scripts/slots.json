@@ -257,5 +257,20 @@
   "src": "oi",
   "id": "3e0122dd064d1812",
   "credit": "Nixon in Saigon, 1969, by Arthur Schatz (manhhai)"
+ },
+ "doc_osd": {
+  "src": "pdf",
+  "id": 2,
+  "crop": "1300:520:120:1430"
+ },
+ "press_babcock": {
+  "src": "oi",
+  "id": "8d8d8406c67cc1a4",
+  "credit": "Babcock printing press (Irene Vidaurri Zubeck)"
+ },
+ "huey_landing": {
+  "src": "oi",
+  "id": "838bcee021150121",
+  "credit": "US Army Huey landing near Mercury BEQ, Vietnam (tommy japan)"
  }
 }

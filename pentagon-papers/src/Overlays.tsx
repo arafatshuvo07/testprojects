@@ -64,7 +64,7 @@ const Counter: React.FC<P> = ({ t, end }) => {
   );
 };
 
-const Year: React.FC<P & { text: string; at: number }> = ({ t, end, text, at }) => (
+const Year: React.FC<P & { text: string; sub?: string; at: number }> = ({ t, end, text, sub, at }) => (
   <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: fadeOutAtEnd(t, end) }}>
     <div
       style={{
@@ -78,7 +78,7 @@ const Year: React.FC<P & { text: string; at: number }> = ({ t, end, text, at }) 
       {text}
     </div>
     <div style={{ fontFamily: MONO, fontSize: 28, color: AMBER, letterSpacing: 10, opacity: fade(t, at + 1.2) }}>
-      THE PENTAGON · ARLINGTON, VIRGINIA
+      {(sub ?? "").toUpperCase()}
     </div>
   </AbsoluteFill>
 );
@@ -324,7 +324,7 @@ export const OverlayLayer: React.FC<{ o: Overlay; t: number; start: number; end:
     case "counter":
       return <Counter t={t} end={end} />;
     case "year":
-      return <Year t={t} end={end} text={o.text} at={o.at} />;
+      return <Year t={t} end={end} text={o.text} sub={o.sub} at={o.at} />;
     case "timeline":
       return <Timeline t={t} end={end} />;
     case "date":

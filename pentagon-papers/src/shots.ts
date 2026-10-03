@@ -7,7 +7,7 @@ export type Motion = "in" | "out" | "left" | "right" | "up" | "down" | "still";
 
 export type Overlay =
   | { kind: "counter" }
-  | { kind: "year"; text: string; at: number }
+  | { kind: "year"; text: string; sub?: string; at: number }
   | { kind: "timeline" }
   | { kind: "date"; text: string; place?: string; at: number }
   | { kind: "papers" }
@@ -42,15 +42,15 @@ export const SHOTS: Shot[] = [
   { t: 6.55, img: "ellsberg_a", motion: "in", focus: [50, 30],
     overlays: [{ kind: "label", title: "Daniel Ellsberg", sub: "Former military analyst", at: 6.9 }] },
   // "...breaking into the Pentagon."
-  { t: 8.4, img: "pentagon_aerial", motion: "out", focus: [50, 50] },
+  { t: 8.4, img: "doc_osd", motion: "out", focus: [50, 40] },
   // "He was a former Defense Department analyst..."
-  { t: 9.85, img: "pentagon_bldg", motion: "left", focus: [50, 50],
+  { t: 9.85, img: "mcnamara_vn", motion: "left", focus: [50, 55],
     overlays: [{ kind: "label", title: "U.S. Department of Defense", sub: "Ellsberg's post: 1964 – 1965", at: 10.5 }] },
   // "...who had helped work on the classified study itself."
   { t: 12.8, img: "doc_cover", motion: "in", focus: [50, 30] },
   // "In 1967, Defense Secretary..."
-  { t: 14.95, img: "pentagon_aerial", motion: "in", focus: [50, 45], dim: 0.62,
-    overlays: [{ kind: "year", text: "1967", at: 15.3 }] },
+  { t: 14.95, img: "convoy_1967", motion: "up", focus: [50, 45], dim: 0.62,
+    overlays: [{ kind: "year", text: "1967", sub: "485,000 U.S. troops in Vietnam by year's end", at: 15.3 }] },
   // "...Robert McNamara had ordered a massive internal history"
   { t: 17.6, img: "lbj_mcnamara", motion: "in", focus: [70, 35],
     overlays: [{ kind: "label", title: "Robert S. McNamara", sub: "Secretary of Defense, 1961 – 1968", at: 17.9 }] },
@@ -98,7 +98,7 @@ export const SHOTS: Shot[] = [
   { t: 78.95, img: "typewriter", motion: "in", focus: [50, 50], dim: 0.15,
     overlays: [{ kind: "label", title: "Reporter Neil Sheehan", sub: "Obtained the papers in March 1971", at: 79.4 }] },
   // "Then, on June 13, 1971, the first story appeared."
-  { t: 82.75, img: "press", motion: "in", focus: [50, 50], dim: 0.5,
+  { t: 82.75, img: "press_babcock", motion: "in", focus: [55, 50], dim: 0.45,
     overlays: [{ kind: "date", text: "Sunday, June 13, 1971", place: "New York", at: 83.5 }] },
   // "Washington reacted almost immediately."
   { t: 87.55, img: "white_house_old", motion: "in", focus: [50, 50] },
@@ -152,9 +152,9 @@ export const SHOTS: Shot[] = [
   // "...had become something much larger: a confrontation over war,"
   { t: 156.3, img: "tayninh_1968", motion: "in", focus: [22, 50] },
   // "government secrecy,"
-  { t: 159.9, img: "pentagon_aerial", motion: "in", focus: [50, 50] },
+  { t: 159.9, img: "doc_cover_detail", motion: "in", focus: [50, 30] },
   // "the press,"
-  { t: 161.4, img: "press", motion: "right", focus: [50, 50] },
+  { t: 161.4, img: "press_babcock", motion: "right", focus: [50, 50] },
   // "and who gets to decide what the public is allowed to know."
   { t: 162.3, img: "ellsberg_a", motion: "out", focus: [60, 35], dim: 0.1 },
   // End card

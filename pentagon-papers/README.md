@@ -6,12 +6,12 @@ lower-thirds, dates, the 1945–1967 timeline, the 6–3 ruling and the per curi
 
 - `data/transcript.json` – word-level timestamps of the narration (Parakeet ASR).
 - `src/shots.ts` – shot list; every cut is pinned to the word it illustrates.
-- `scripts/images.json` – which real public-domain archival photo fills each slot.
-- `scripts/fetch_images.py` – downloads those photos from Wikimedia Commons
-  (needs `commons.wikimedia.org` and `upload.wikimedia.org`), writes credits.
+- `scripts/slots.json` – which real archival image fills each slot, with crop and source.
+- `scripts/prepare_images.py` – rebuilds `public/img/` from the original sources: the declassified
+  Pentagon Papers PDF (DocumentCloud S3), Smithsonian Open Access (CC0) and the Open Images
+  dataset (CC BY 2.0, streamed from its S3 tar shards). The prepared images are committed, so
+  this is only needed to change picks.
 - `scripts/score.py` – synthesises the drone score, impacts and typewriter keys.
+- `CREDITS.md` – source and license of every image used.
 
-Build everything: `npm i && ./render.sh` → `out/pentagon-papers.mp4`.
-
-You can also drop your own photos into `public/img/<slot>.jpg` (slot names are
-the keys in `scripts/images.json`) and run `python3 scripts/fetch_images.py --meta-only`.
+Render: `npm i && python3 scripts/score.py && npx remotion render PentagonPapers out/pentagon-papers.mp4 --crf=17`
