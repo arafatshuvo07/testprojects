@@ -123,10 +123,10 @@ const DateCard: React.FC<P & { text: string; place?: string; at: number }> = ({ 
 );
 
 const PRESIDENTS = [
-  { key: "truman", year: "1945", name: "Truman", x: 0.0 },
-  { key: "eisenhower", year: "1953", name: "Eisenhower", x: 0.364 },
-  { key: "kennedy", year: "1961", name: "Kennedy", x: 0.727 },
-  { key: "johnson", year: "1963", name: "Johnson", x: 0.818 },
+  { key: "truman_face", year: "1945", name: "Truman", x: 0.0, dx: 0 },
+  { key: "eisenhower_face", year: "1953", name: "Eisenhower", x: 0.364, dx: 0 },
+  { key: "kennedy_face", year: "1961", name: "Kennedy", x: 0.727, dx: -95 },
+  { key: "johnson_face", year: "1963", name: "Johnson", x: 0.818, dx: 95 },
 ];
 
 const Timeline: React.FC<P> = ({ t, end }) => {
@@ -151,10 +151,10 @@ const Timeline: React.FC<P> = ({ t, end }) => {
         const k = fade(t, at, 0.4);
         const m = META[p.key];
         return (
-          <div key={p.key} style={{ position: "absolute", left: L + W * p.x - 80, top: 330, width: 160, textAlign: "center", opacity: k, translate: `0px ${interpolate(k, [0, 1], [20, 0])}px` }}>
+          <div key={p.key} style={{ position: "absolute", left: L + W * p.x - 80 + p.dx, top: 330, width: 160, textAlign: "center", opacity: k, translate: `0px ${interpolate(k, [0, 1], [20, 0])}px` }}>
             <div style={{ width: 160, height: 200, overflow: "hidden", background: "#1b1814", boxShadow: "0 10px 40px rgba(0,0,0,0.7)" }}>
               {m ? (
-                <Img src={staticFile(`img/${p.key}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", filter: "grayscale(1) contrast(1.1)" }} />
+                <Img src={staticFile(`img/${p.key}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", filter: "grayscale(1) contrast(1.1)" }} />
               ) : null}
             </div>
             <div style={{ fontFamily: MONO, fontSize: 22, color: INK, marginTop: 14, letterSpacing: 2 }}>{p.name.toUpperCase()}</div>
@@ -162,7 +162,7 @@ const Timeline: React.FC<P> = ({ t, end }) => {
         );
       })}
       <div style={{ position: "absolute", left: L, top: 640, width: W * prog, height: 4, background: INK }} />
-      {[...PRESIDENTS, { key: "end", year: "1967", name: "", x: 1 }].map((p) => {
+      {[...PRESIDENTS, { key: "end", year: "1967", name: "", x: 1, dx: 0 }].map((p) => {
         const at = a + (b - a) * p.x;
         const big = p.year === "1945" || p.year === "1967";
         return (
@@ -279,6 +279,32 @@ const Plumbers: React.FC<P> = ({ t, end }) => {
   );
 };
 
+
+// A photocopier's light bar sweeping over the page, repeating like a copier run.
+const Scan: React.FC<P & { start: number }> = ({ t, end, start }) => {
+  const period = 1.15;
+  const ph = ((t - start) % period) / period;
+  const y = interpolate(ph, [0, 0.8, 1], [-12, 112, 112], clamp);
+  const on = interpolate(ph, [0, 0.05, 0.75, 0.8], [0, 1, 1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ opacity: on * fadeOutAtEnd(t, end), mixBlendMode: "screen" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: `${y}%`,
+          height: 140,
+          translate: "0px -50%",
+          background: "linear-gradient(180deg, rgba(190,255,220,0) 0%, rgba(190,255,220,0.35) 40%, rgba(235,255,245,0.85) 50%, rgba(190,255,220,0.35) 60%, rgba(190,255,220,0) 100%)",
+          filter: "blur(6px)",
+        }}
+      />
+      <AbsoluteFill style={{ background: `rgba(160,230,200,${0.05 * on})` }} />
+    </AbsoluteFill>
+  );
+};
+
 const End: React.FC<P> = ({ t, end }) => (
   <AbsoluteFill style={{ background: "#070605", alignItems: "center", justifyContent: "center", opacity: interpolate(t, [end - 1.2, end], [1, 0], clamp) }}>
     <div style={{ fontFamily: SERIF, fontSize: 110, color: INK, letterSpacing: interpolate(t, [165.6, end], [14, 26], clamp), opacity: fade(t, 165.9, 1.2) }}>
@@ -321,6 +347,8 @@ export const OverlayLayer: React.FC<{ o: Overlay; t: number; start: number; end:
       return <Pages t={t} end={end} from={start} />;
     case "plumbers":
       return <Plumbers t={t} end={end} />;
+    case "scan":
+      return <Scan t={t} end={end} start={start} />;
     case "end":
       return <End t={t} end={end} />;
   }

@@ -1,15 +1,261 @@
 {
- "doc_cover":   {"src": "pdf", "id": 2},
- "doc_cover_detail": {"src": "pdf", "id": 2, "crop": "1300:680:120:180"},
- "doc_text":    {"src": "pdf", "id": 6, "crop": "1260:700:150:420"},
- "doc_header":  {"src": "pdf", "id": 5, "crop": "1300:640:120:60"},
- "doc_page5":   {"src": "pdf", "id": 5},
- "doc_page6":   {"src": "pdf", "id": 6},
- "doc_page8":   {"src": "pdf", "id": 8},
- "doc_page12":  {"src": "pdf", "id": 12},
- "doc_page13":  {"src": "pdf", "id": 13},
- "truman":      {"src": "si", "id": "npg/NPG-8400594C_1", "credit": "Harry S. Truman, c. 1945, Harris & Ewing Studio, National Portrait Gallery"},
- "eisenhower":  {"src": "si", "id": "npg/NPG-NPG_2013_19", "credit": "Dwight D. Eisenhower, c. 1953, Robert F. Cranston, National Portrait Gallery"},
- "johnson":     {"src": "si", "id": "npg/NPG-NPG_93_388_22", "credit": "Lyndon B. Johnson, c. 1965, Oscar White / Pach Brothers, National Portrait Gallery"},
- "typewriter":  {"src": "si", "id": "nmaahc/NMAAHC-5686075A5BD62_4001-000002", "credit": "Underwood typewriter, National Museum of African American History and Culture"}
+ "doc_cover": {
+  "src": "pdf",
+  "id": 2
+ },
+ "doc_cover_detail": {
+  "src": "pdf",
+  "id": 2,
+  "crop": "1300:680:120:180"
+ },
+ "doc_text": {
+  "src": "pdf",
+  "id": 6,
+  "crop": "1260:700:150:420"
+ },
+ "doc_header": {
+  "src": "pdf",
+  "id": 5,
+  "crop": "1300:640:120:60"
+ },
+ "doc_page5": {
+  "src": "pdf",
+  "id": 5
+ },
+ "doc_page6": {
+  "src": "pdf",
+  "id": 6
+ },
+ "doc_page8": {
+  "src": "pdf",
+  "id": 8
+ },
+ "doc_page12": {
+  "src": "pdf",
+  "id": 12
+ },
+ "doc_page13": {
+  "src": "pdf",
+  "id": 13
+ },
+ "truman": {
+  "src": "si",
+  "id": "npg/NPG-8400594C_1",
+  "credit": "Harry S. Truman, c. 1945, Harris & Ewing Studio, National Portrait Gallery"
+ },
+ "eisenhower": {
+  "src": "si",
+  "id": "npg/NPG-NPG_2013_19",
+  "credit": "Dwight D. Eisenhower, c. 1953, Robert F. Cranston, National Portrait Gallery"
+ },
+ "johnson": {
+  "src": "si",
+  "id": "npg/NPG-NPG_93_388_22",
+  "credit": "Lyndon B. Johnson, c. 1965, Oscar White / Pach Brothers, National Portrait Gallery"
+ },
+ "typewriter": {
+  "src": "si",
+  "id": "nmaahc/NMAAHC-5686075A5BD62_4001-000002",
+  "credit": "Underwood typewriter, National Museum of African American History and Culture"
+ },
+ "ellsberg_a": {
+  "src": "oi",
+  "id": "5e85918315785ad9",
+  "credit": "Daniel Ellsberg, photo by Christopher Michel"
+ },
+ "ellsberg_b": {
+  "src": "oi",
+  "id": "0a394ad1435fb708",
+  "credit": "Daniel Ellsberg reading, photo by Christopher Michel"
+ },
+ "ellsberg_c": {
+  "src": "oi",
+  "id": "bd010a4672401fae",
+  "credit": "Daniel Ellsberg, photo by Christopher Michel"
+ },
+ "mcnamara": {
+  "src": "oi",
+  "id": "2f6a4a670f57c7a8",
+  "credit": "President Kennedy meets with Gen. Taylor and Secretary McNamara, 2 Oct 1963 (manhhai)"
+ },
+ "mcnamara_vn": {
+  "src": "oi",
+  "id": "fa197a36067d25cf",
+  "credit": "Robert McNamara and Gen. Maxwell Taylor, South Vietnam, Sept 1963 (manhhai)"
+ },
+ "kennedy": {
+  "src": "oi",
+  "id": "20271b039aea8c77",
+  "credit": "Louis Wilson with David Shoup and John F. Kennedy, c. 1962 (USMC Archives)"
+ },
+ "heli_1965": {
+  "src": "oi",
+  "id": "666f22aace090c6a",
+  "credit": "Marine helicopter operations in Vietnam, 1965 (tommy japan)"
+ },
+ "yankee_papa": {
+  "src": "oi",
+  "id": "3d0dc5e989600600",
+  "credit": "Larry Burrows with helicopter Yankee Papa 13, 1965 (tommy japan)"
+ },
+ "patrol_1967": {
+  "src": "oi",
+  "id": "1f94af70c912eab2",
+  "credit": "Vietnam 1967, Delta Patrol, by Larry Burrows (manhhai)"
+ },
+ "marines_1968": {
+  "src": "oi",
+  "id": "5d0231e03b1a2a69",
+  "credit": "Vietnam War 1968, Marines in the delta (manhhai)"
+ },
+ "convoy_1967": {
+  "src": "oi",
+  "id": "b440efe7d6b3e322",
+  "credit": "Armored rail convoy, Vietnam, October 1967 (manhhai)"
+ },
+ "hue_1968": {
+  "src": "oi",
+  "id": "dfffd2ce699ce4cf",
+  "credit": "Marines in Hue, 1968, press photo (manhhai)"
+ },
+ "lbj_speech": {
+  "src": "oi",
+  "id": "a9f06cd02b57d51f",
+  "credit": "President Lyndon B. Johnson speaks in Boston (City of Boston Archives)"
+ },
+ "nixon": {
+  "src": "oi",
+  "id": "3dbaf9534690f954",
+  "credit": "President Nixon at the White House (NIH Image Gallery)"
+ },
+ "white_house_old": {
+  "src": "oi",
+  "id": "d84149aa9a52c35c",
+  "credit": "White House, south front, postcard (Boston Public Library)"
+ },
+ "white_house": {
+  "src": "oi",
+  "id": "2cf917d3d093ef99",
+  "credit": "The White House (Cliff)"
+ },
+ "white_house2": {
+  "src": "oi",
+  "id": "d9fad871dd94b90e",
+  "credit": "South Portico of the White House (Ron Cogswell)"
+ },
+ "capitol_old": {
+  "src": "oi",
+  "id": "855566835e3febd3",
+  "credit": "U.S. Capitol and Senate Office Building, postcard (Boston Public Library)"
+ },
+ "capitol": {
+  "src": "oi",
+  "id": "b4ef967578da818e",
+  "credit": "West Front of the U.S. Capitol (Ron Cogswell)"
+ },
+ "scotus_old": {
+  "src": "oi",
+  "id": "c5154154edfa7b48",
+  "credit": "New United States Supreme Court Building, postcard (Boston Public Library)"
+ },
+ "scotus": {
+  "src": "oi",
+  "id": "a207ed8624a7de52",
+  "credit": "Supreme Court Building (Ed Bierman)"
+ },
+ "scotus2": {
+  "src": "oi",
+  "id": "d3037aaf8f3c2909",
+  "credit": "Supreme Court of the United States, spiral staircase (Phil Roeder)"
+ },
+ "nyt": {
+  "src": "oi",
+  "id": "d120e3669e98b352",
+  "credit": "The New York Times, Oct. 11, 1973 (Ken Mayer)",
+  "crop": "1024:300:0:0"
+ },
+ "wapo": {
+  "src": "oi",
+  "id": "3e9f4b82b8b21fb1",
+  "credit": "The Washington Post, Washington DC (Daniel X. O'Neil)"
+ },
+ "press": {
+  "src": "oi",
+  "id": "a5d523838f42d32a",
+  "credit": "Printing press (tracy ducasse)"
+ },
+ "protest": {
+  "src": "oi",
+  "id": "3763ab23ee1af645",
+  "credit": "Vietnam War demonstration, December 1965 (tommy japan)"
+ },
+ "beverly_hills": {
+  "src": "oi",
+  "id": "29db0268cf955d8e",
+  "credit": "Beverly Hills, California, postcard (Boston Public Library)"
+ },
+ "typewriter2": {
+  "src": "oi",
+  "id": "b0bf66060ba4065e",
+  "credit": "Typewriter (Yosomono)"
+ },
+ "truman_face": {
+  "src": "si",
+  "id": "npg/NPG-8400594C_1",
+  "credit": "Harry S. Truman, c. 1945, Harris & Ewing Studio, National Portrait Gallery",
+  "crop": "iw*0.42:iw*0.52:iw*0.27:ih*0.11"
+ },
+ "eisenhower_face": {
+  "src": "si",
+  "id": "npg/NPG-NPG_2013_19",
+  "credit": "Dwight D. Eisenhower, c. 1953, Robert F. Cranston, National Portrait Gallery",
+  "crop": "iw*0.46:iw*0.56:iw*0.30:ih*0.12"
+ },
+ "johnson_face": {
+  "src": "si",
+  "id": "npg/NPG-NPG_93_388_22",
+  "credit": "Lyndon B. Johnson, c. 1965, Oscar White / Pach Brothers, National Portrait Gallery",
+  "crop": "iw*0.6:iw*0.75:iw*0.2:ih*0.08"
+ },
+ "kennedy_face": {
+  "src": "oi",
+  "id": "2f6a4a670f57c7a8",
+  "credit": "President Kennedy meets with Gen. Taylor and Secretary McNamara, 2 Oct 1963 (manhhai)",
+  "crop": "iw*0.27:iw*0.34:iw*0.6:ih*0.12"
+ },
+ "lbj_mcnamara": {
+  "src": "oi",
+  "id": "179b171a97d04a15",
+  "credit": "President Johnson and Defense Secretary McNamara, Washington, 1968 (manhhai)"
+ },
+ "ellsberg_d": {
+  "src": "oi",
+  "id": "3cffed6ad91c48ab",
+  "credit": "Daniel Ellsberg, photo by Christopher Michel"
+ },
+ "ellsberg_e": {
+  "src": "oi",
+  "id": "12abe1a995a3eee0",
+  "credit": "Daniel Ellsberg, photo by Christopher Michel"
+ },
+ "scotus_pillars": {
+  "src": "oi",
+  "id": "7c3e0a62db622b3a",
+  "credit": "Supreme Court pillars, Washington D.C. (David Ohmer)"
+ },
+ "scotus3": {
+  "src": "oi",
+  "id": "7d2bc47eff86c712",
+  "credit": "US Supreme Court (Roman Boed)"
+ },
+ "tayninh_1968": {
+  "src": "oi",
+  "id": "70eb429445eef5df",
+  "credit": "Tay Ninh 1968, helicopter lands in jungle clearing, UPI press photo (tommy japan)"
+ },
+ "nixon_saigon": {
+  "src": "oi",
+  "id": "3e0122dd064d1812",
+  "credit": "Nixon in Saigon, 1969, by Arthur Schatz (manhhai)"
+ }
 }
